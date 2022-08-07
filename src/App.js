@@ -6,8 +6,6 @@ import useHttp from './Hooks/use-http';
 function App() {
   const [tasks, setTasks] = useState([]);
 
-  console.log(process.env.REACT_APP_);
-
   const { isLoading, error, sendRequest } = useHttp();
 
   console.log("Before calling sendRequest in App.js")
